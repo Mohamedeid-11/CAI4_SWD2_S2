@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h3>Ain Shams University Complaint Form</h3>
+    <form action="https://github.com" method="post">
+    
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required aria-required="true">
+
+        <!--  The email pattern matches my univeristy email -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" 
+            pattern="^[a-zA-Z0-9]+@cis\.asu\.edu\.eg$" 
+            placeholder="name@cis.asu.edu.eg"
+            required aria-required="true"
+            aria-describedby="email-helper">
+        <span id="email-helper" hidden>Format: name@cis.asu.edu.eg</span>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" name="phone_number" id="phone_number" pattern="^(010|011|012|015)[0-9]{8}$">
+        
+        <label for="date">Complaint Date:</label>
+        <input type="date" name="date" id="date" min="2025-01-01" max="2025-12-18">
+
+        <label for="details">Complaint Details:</label>
+        <textarea name="details" id="details" required aria-required="true" rows="15" cols="35"></textarea>
+        
+        <input type="submit">
+    </form>
+</body>
+
+</html>
+
+
+<!-- <form action="https://google.com" novalidate method="post">
+    <input type="text" disabled value="sayed" id="username" name="username" placeholder="enter username">
+    <label for="email">email</label>
+   
+    <input type="email" required id="email" name="email">
+    <input type="password" required minlength="3" maxlength="10" name="password">
+   
+    <label for="remember_me">remember me</label>
+    <input type="checkbox" name="remember_me" id="remember_me">
+   
+    <select name="cars" id="">
+        <optgroup label="German Cars">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+        </optgroup>
+        <optgroup label="American Cars">
+            <option value="Tesla">Tesla</option>
+            <option value="Ford">Ford</option>
+        </optgroup>
+        <optgroup label="Swedish Cars">
+            <option value="Volvo">Volvo</option>
+        </optgroup>
+    </select>
+    
+    <label for="male_gender">male</label>
+    <input type="radio" name="gender" value="male" id="male_gender">
+    
+    <label for="female_gender">female</label>
+    <input type="radio" name="gender" value="female" id="female_gender">
+
+    <input type="number" name="age" placeholder="age" min="10" max="100" id="">
+    
+    <input type="date" name="birth_date" min="2023-01-01" max="2023-12-31" id="">
+
+    <input type="tel" placeholder="0100000000" name="phone_number" pattern="^(010|011|012|015)[0-9]{8}$" id="">
+
+    <textarea name="" rows="10" cols="30" id=""></textarea>
+
+    label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" name="browser" id="browser">
+
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+    <input type="submit">
+</form> -->
