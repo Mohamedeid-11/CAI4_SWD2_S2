@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 dashboard">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Dashboard</h1>
+
+        <form action="/search" method="GET" role="search">
+            <input type="search" id="search" name="search" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+
+        <nav aria-label="User Menu">
+            <ul>
+                <li><a href="/profile">My Account</a></li>
+                <li><a href="/logout">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <nav aria-label="Main Dashboard Navigation">
+        <h2>Navigation</h2>
+
+        <section>
+            <h3>General</h3>
+            <ul>
+                <li><a href="/" aria-current="page">Overview</a></li>
+                <li><a href="/analytics">Analytics</a></li>
+                <li><a href="/reports">Reports</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Management</h3>
+            <ul>
+                <li><a href="/users">Users</a></li>
+                <li><a href="/settings">Settings</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <main id="main-content">
+        <header>
+            <h2>Home Page</h2>
+            <p>Status for: December 18, 2025</p>
+        </header>
+
+        <section id="Statistics">
+            <h3>Statistics</h3>
+
+            <article>
+                <p>Total Revenue: $45,200.00</p>
+            </article>
+
+            <article>
+                <p>Active Users: 1,284</p>
+            </article>
+        </section>
+
+        <section id="transactions">
+            <h3>Transactions</h3>
+            <table>
+                <caption>Transactions</caption>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dec 18, 2025</td>
+                        <td>Jane Doe</td>
+                        <td>Completed</td>
+                        <td>$120.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dec 17, 2025</td>
+                        <td>John Smith</td>
+                        <td>Pending</td>
+                        <td>$450.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <aside>
+        <h3 id="notification">Notifications</h3>
+        <ul>
+            <li>
+                <strong>Security Alert:</strong> New login detected from Tokyo.
+                <br><small>1 hour ago</small>
+            </li>
+            <li>
+                <strong>Update:</strong> Server maintenance scheduled for Dec 20.
+                <br><small>Yesterday</small>
+            </li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
