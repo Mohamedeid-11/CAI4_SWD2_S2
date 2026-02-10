@@ -14,21 +14,26 @@
 <div class="app">
     <header class="site-header">
         <img src="./assets/images/logo.svg" alt="Weather Now Logo" class="logo">
-        <button>Units</button>
+        <button class="units-btn">
+            <img src="assets/images/icon-units.svg" alt="">
+            <span>Units</span>
+            <img src="./assets/images/icon-dropdown.svg" alt="">
+        </button>
     </header>
     
-    <!-- <div class="head"> -->
-        <h1>How's the sky looking today?</h1>
-        <form class="search" action="">
-            <input name="search" type="search">
-            <input type="submit">
-        </form>
-    <!-- </div> -->
+    <h1>How's the sky looking today?</h1>
+    <form class="search" action="">
+        <input name="search" type="search" placeholder="Search for a place...">
+        <input type="submit">
+    </form>
 
     <div class="layout">
         <main class="content">
             <section class="main-card">
-                <p class="city">Berlin, Germany</p>
+                <div class="info">
+                    <p class="city">Berlin, Germany</p>
+                    <p class="date">Tuesday, Aug 5, 2025</p>
+                </div>
                 <div class="icon-degree">
                     <img src="./assets/images/icon-sunny.webp" alt="Sunny">
                     <span>20°</span>
@@ -38,20 +43,20 @@
             <section class="info-list">
                 <ul>
                     <li>
-                        <h4>Feels Like</h4>
+                        <header>Feels Like</header>
                         <p>18°</p>
                     </li>
                     <li>
-                        <h4>Feels Like</h4>
-                        <p>18°</p>
+                        <header>Humitidy</header>
+                        <p>46%</p>
                     </li>
                     <li>
-                        <h4>Feels Like</h4>
-                        <p>18°</p>
+                        <header>Wind</header>
+                        <p>14 Km/h</p>
                     </li>
                     <li>
-                        <h4>Feels Like</h4>
-                        <p>18°</p>
+                        <header>Precipitation</header>
+                        <p>0 mm</p>
                     </li>
                 </ul>
             </section>
@@ -115,7 +120,7 @@
         <aside class="hourly-forecast">
             <header>
                 <h3>Hourly forecast</h3>
-                <button>Tuesday</button>
+                <button class="date-btn">Tuesday</button>
             </header>
 
             <ul>
